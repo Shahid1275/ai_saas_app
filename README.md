@@ -73,7 +73,11 @@ Ensure you have PostgreSQL or your preferred SQL database set up. Create a datab
 2. **Update `.env` File:**
 
    Update the `DATABASE_URL` variable in the `.env` file with your database credentials.
-   ```
+   
+
+```
+psql -U postgres -d ai_saas_admin_app -f seed.sql
+
 PORT=your_port
 DB_HOST=localhost
 DB_USER=postgres
@@ -82,11 +86,6 @@ DB_NAME=your_db_name
 DB_PORT=5432
 JWT_SECRET=your_jwt_secret
 REFRESH_SECRET=your_refresh_jwt_secret_key
-```
-   
-
-```
-psql -U postgres -d url_shortner -f seed.sql
 ```
 
 The passwords are stored in hashed form for security. Ensure your application uses appropriate hashing methods to match this data.
