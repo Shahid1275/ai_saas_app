@@ -23,9 +23,9 @@ PORT=5000
 
 NOTE: change the scripts in package.json depending upon your os to set NODE environment.
 
-## Starting the Application
+### Starting the Application
 
-### Backend
+# Backend
 
 1. Navigate to the backend directory:
 
@@ -52,7 +52,7 @@ install db dependencies also
 4. Start the backend server:
 
    ```bash
-   npm run start
+   npm start
    ```
 
    The backend server will be running on `http://localhost:5000` by default.
@@ -73,7 +73,6 @@ Ensure you have PostgreSQL or your preferred SQL database set up. Create a datab
 2. **Update `.env` File:**
 
    Update the `DATABASE_URL` variable in the `.env` file with your database credentials.
-   
 
 ```
 psql -U postgres -d ai_saas_admin_app -f seed.sql
