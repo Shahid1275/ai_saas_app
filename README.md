@@ -49,7 +49,7 @@ NOTE: change the scripts in package.json depending upon your os to set NODE envi
 ```
 Copy from Seed.js and execute in your DB
 install db dependencies also
-
+```
 4. Start the backend server:
 
    ```bash
